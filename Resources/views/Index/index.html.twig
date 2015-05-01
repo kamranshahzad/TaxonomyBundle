@@ -1,0 +1,41 @@
+{% extends 'KamranTaxonomyBundle::layout.html.twig' %}
+
+
+
+
+{% block body %}
+    
+
+
+	<a href="{{ path('vocabulary_add') }}">Add Vocabulary</a>
+    <br/>
+    <table>
+	<tr>
+		<td>Vocabulary name</td>
+		<td>Operations</td>
+	</td>
+	{% if vocabulary | length > 0 %}
+		{% for vob in vocabulary %}	
+		<tr>
+			<td>{{vob.name}}</td>
+			<td>
+				<a href="{{ path('vocabulary_edit', { 'id': vob.id }) }}">edit vocabulary</a> 
+				<a href="{{ path('terms_show', { 'id': vob.id }) }}">list terms</a>
+				<a href="{{ path('term_add', { 'id': vob.id }) }}">add terms</a>
+			</td>
+		</td>
+		{% endfor %}
+	{% else %}
+	<tr>
+		<td colspan="2" >
+			No vocabularies available. 
+		</td>
+	</td>
+	{% endif %}
+	</table>
+
+{% endblock %}
+
+
+
+

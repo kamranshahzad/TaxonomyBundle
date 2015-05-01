@@ -1,0 +1,4 @@
+taxonomy_annotation:
+    resource: "@KamranTaxonomyBundle/Controller"
+    type:     annotation
+    

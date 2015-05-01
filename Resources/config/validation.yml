@@ -1,0 +1,7 @@
+
+#1
+Kamran\TaxonomyBundle\Entity\Vocabulary:
+    properties:
+        name:
+            - Type: { type: string, groups: vocabulary_create }
+            - NotBlank: { groups: vocabulary_create }

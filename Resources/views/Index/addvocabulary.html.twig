@@ -1,0 +1,22 @@
+{% extends 'KamranTaxonomyBundle::layout.html.twig' %}
+
+
+
+{% block body %}
+
+<div class="col-lg-6">
+        <fieldset>
+            <legend>Example extended forms via view</legend>
+            
+                <form class="entity" action="{{ path('vocabulary_create') }}" method="post"  class="form-horizontal">
+                    {{ form_errors(form) }}
+                    {{ form_rest(form) }}
+                    <div class="actions">
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            
+        </fieldset>
+</div>
+
+{% endblock %}

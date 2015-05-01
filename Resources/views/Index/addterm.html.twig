@@ -1,0 +1,13 @@
+{% extends 'KamranTaxonomyBundle::layout.html.twig' %}
+{% block body %}
+
+    <h2>New Term</h2>
+
+    <form class="entity" action="{{ path('terms_create',{ 'id': id }) }}" method="post"  >
+        {{ form_errors(form) }}
+        {{ form_rest(form) }}
+        <div class="actions">
+            <button type="submit">Save</button>
+        </div>
+    </form>
+{% endblock %}

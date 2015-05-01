@@ -1,0 +1,5 @@
+services:
+    taxonomy_forms.form.type.vocabulary_form:
+        class: Kamran\TaxonomyBundle\Form\VocabularyType
+        tags:
+            - { name: form.type, alias: vocabulary_form }
