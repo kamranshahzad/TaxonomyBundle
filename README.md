@@ -4,7 +4,7 @@
 
 This bundle provides multi child categories like drupal taxonomies.
 
-![alt text](https://github.com/kamranshahzad/TaxonomyBundle/tree/master/Resources/public/images/taxonomy-screenshot.png "Taxonomy screenshot")
+![alt text](https://github.com/kamranshahzad/TaxonomyBundle/blob/master/Resources/public/images/taxonomy-screenshot.png "Taxonomy screenshot")
 
 ## Installation.
 
