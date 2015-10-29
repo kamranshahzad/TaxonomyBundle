@@ -1,0 +1,22 @@
+{
+    "name": "kamran/taxonomy-bundle",
+    "type": "symfony-bundle",
+    "description": "Drupal like taxonomy bundle in symfony2",
+    "keywords": [ "taxonomy", "categories","drupal like taxonomy", "bundle" ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kamran Shahzad",
+            "email": "bleak.unseen@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "sensio/framework-extra-bundle": "~3.0,>=3.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TaxonomyBundle\\": ""
+        }
+    }
+}
